@@ -13,3 +13,10 @@ The package `go.opencensus.io/exporter/stats/prometheus` has been replaced with 
 $ go get -u go.opencensus.io/...
 $ go get -u contrib.go.opencensus.io/exporter/prometheus
 ```
+
+Opentracing
+
+```
+$ go get -u -v contrib.go.opencensus.io/exporter/zipkin
+$ go get -u -v github.com/openzipkin/zipkin-go
+```

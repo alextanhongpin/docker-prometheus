@@ -1,0 +1,18 @@
+global:
+        scrape_interval: 1m
+        scrape_timeout: 10s
+        evaluation_interval: 1m
+        external_labels:
+                app: go-prom:v1
+                tier: development
+                monitor: demo
+
+scrape_configs:
+- job_name: myapp
+  scrape_interval: 10s
+  static_configs:
+  - targets:
+    # This is the application port to scrape. We are running the
+    # prometheus app in docker, in order to access a non-docker
+    # host, we set it to host.docker.internal instead of localhost.
+    - host.docker.internal:2112

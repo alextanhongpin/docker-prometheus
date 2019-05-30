@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+        prom:
+                image: prom/prometheus:v2.10.0
+                ports:
+                        - 127.0.0.1:9090:9090
+                volumes:
+                        - ./prometheus.yml:/etc/prometheus/prometheus.yml

@@ -1,11 +1,11 @@
 global:
-        scrape_interval: 1m
-        scrape_timeout: 10s
-        evaluation_interval: 1m
-        external_labels:
-                app: go-prom:v1
-                tier: development
-                monitor: demo
+  scrape_interval: 1m
+  scrape_timeout: 10s
+  evaluation_interval: 1m
+  external_labels:
+    app: go-prom:v1
+    tier: development
+    monitor: demo
 
 scrape_configs:
 - job_name: myapp
